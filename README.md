@@ -29,8 +29,8 @@ Algumas notas
 -------------
 
 * a ordem de listagem de alguns recursos **podem** ser altamente influenciadas pelas preferências do autor.
-* serão exemplificados utilitários em ambiente OSX, mas regra geral as ferramentas são agnósticas de sistema operativo 
-e a respetiva página de documentação fará referências a outros sistemas operativos e é sempre o melhor recurso 
+* serão exemplificados utilitários em ambiente OSX, mas regra geral as ferramentas são agnósticas de sistema operativo
+e a respetiva página de documentação fará referências a outros sistemas operativos e é sempre o melhor recurso
 
 
 Endereços oficiais
@@ -52,7 +52,7 @@ Endereços oficiais
 
     Navegável online e utilizado como fonte para instaladores de pacotes Python.
 
-Comunidade em Portugal 
+Comunidade em Portugal
 ----------------------
 
 * Sítio oficial
@@ -98,7 +98,7 @@ Documentação comunitária; livros
     Um compêndio de Python em Inglês (do qual, em parte surgiu, a ideia para este mesmo)
 
 * *Dive into Python*
-    
+
     Livro gratuito, com um intuito mais prático que teórico
 
     * Python *3.x*: [http://getpython3.com/diveintopython3/](http://getpython3.com/diveintopython3/)
@@ -123,17 +123,17 @@ Ferramentas básicas que fazem a diferença
 **Instalar um (ou mais) pacotes**
 
     $ pip install nome_do_pacote_1 nome_do_pacote_2
-    
+
 **Instalar uma versão específica de um pacote, caso essa versão [ainda] esteja disponível no Pypi**
 
     $ pip install nome_do_pacote==1.0.1
 
 **Atualizar (caso necessário) um pacote**
-    
+
     $ pip install -U nome_do_pacote_1
 
 **Desinstalar um pacote ou mais pacotes**
-    
+
     $ pip uninstall nome_do_pacote_1
 
 Uma funcionalidade excelente e muito usada, é o facto de se poder passar como parâmetro ao comando, o caminho de um ficheiro de texto que contenha, por linha, o nome e possivelmente versão, tal como no uso singular acima exemplificado, de uma lista de pacotes e desta forma o *pip* instala de forma automática todos os pacotes listados.
@@ -183,10 +183,10 @@ Por exemplo, é muito comum os programadores de Python criarem uma instalação 
 
 Exemplificando, tendo a seguinte instalação de Python + *pip* no sistema:
 
-    zemanel@victory ➜  ~  which python                
+    zemanel@victory ➜  ~  which python
     /usr/local/bin/python
 
-    zemanel@victory ➜  ~  python --version   
+    zemanel@victory ➜  ~  python --version
     Python 2.7.3
 
     zemanel@victory ➜  ~  which pip
@@ -197,17 +197,17 @@ Exemplificando, tendo a seguinte instalação de Python + *pip* no sistema:
 
 assumindo uma instalação *limpa*, é primeiro necessário a instalação do próprio pacote *virtualenv* no sistema operativo, neste caso através do *pip*:
 
-    zemanel@victory ➜  ~  pip install virtualenv 
+    zemanel@victory ➜  ~  pip install virtualenv
     Downloading/unpacking virtualenv
       Real name of requirement virtualenv is virtualenv
       Using download cache from /Users/zemanel/.pip/cache/http%3A%2F%2Fpypi.python.org%2Fpackages%2Fsource%2Fv%2Fvirtualenv%2Fvirtualenv-1.8.4.tar.gz
       Running setup.py egg_info for package virtualenv
-        
+
         warning: no previously-included files matching '*' found under directory 'docs/_templates'
         warning: no previously-included files matching '*' found under directory 'docs/_build'
     Installing collected packages: virtualenv
       Running setup.py install for virtualenv
-        
+
         warning: no previously-included files matching '*' found under directory 'docs/_templates'
         warning: no previously-included files matching '*' found under directory 'docs/_build'
         Installing virtualenv script to /usr/local/share/python
@@ -236,15 +236,15 @@ Apartir deste momento, temos então acesso ao comando *virtualenv* (mais propria
     /usr/local/share/python/virtualenv
 
 Um ambiente virtual é meramente um diretório e podemos definir a sua localização, por ambiente, aquando da sua criação :
-    
+
     # criação do ambiente virtual
-    zemanel@victory ➜  ~  virtualenv instalacao_virtual_1 
+    zemanel@victory ➜  ~  virtualenv instalacao_virtual_1
     New python executable in instalacao_virtual_1/bin/python
     Installing setuptools............done.
     Installing pip...............done.
 
     # conteúdo do diretório
-    zemanel@victory ➜  ~  ls /Users/zemanel/Temp/instalacao_virtual_1 
+    zemanel@victory ➜  ~  ls /Users/zemanel/Temp/instalacao_virtual_1
     bin
     include
     lib
@@ -261,7 +261,7 @@ Listando os pacotes instalados neste novo ambiente virtual, verificamos que é i
 Para, na linha de comandos, alternarmos para este novo ambiente, basta por exemplo *incluir* na sessão o conteúdo do seguinte *shell script*:
 
     zemanel@victory ➜  ~  source /Users/zemanel/Temp/instalacao_virtual_1/bin/activate
-    (instalacao_virtual_1)zemanel@victory ➜  ~ 
+    (instalacao_virtual_1)zemanel@victory ➜  ~
 
 O binário Python por omissão torna-se então o do ambiente virtual:
 
@@ -269,7 +269,7 @@ O binário Python por omissão torna-se então o do ambiente virtual:
     /Users/zemanel/Temp/instalacao_virtual_1/bin/python
 
 ### virtualenvwrapper
-    
+
     Conjunto de *shell scripts* que automatizam e adicionam inúmeras funcionalidades em redor do *virtualenv*, tais como:
 
     * Criação automática, por ambiente virtual, de *scripts* *pre* / *pós* ativação/desativação/remoção de um ambiente
@@ -277,9 +277,9 @@ O binário Python por omissão torna-se então o do ambiente virtual:
     * ***TODO*** outros
 
     [http://pypi.python.org/pypi/virtualenvwrapper/](http://pypi.python.org/pypi/virtualenvwrapper/)
-    
+
 ### ipython
-    
+
 Conhecido como uma consola de linha de comandos interativa com inúmeras funcionalidades acima da consola / interpretador de linha de comandos oficial, mas muito mais.
 
 * Sítio oficial: [http://ipython.org](http://ipython.org)
@@ -309,6 +309,12 @@ http://www.djangopackages.com
 * Sitio oficial: [http://www.web2py.com](http://www.web2py.com)
 
 * Documentação: [http://www.web2py.com/examples/default/documentation](http://www.web2py.com/examples/default/documentation)
+
+* Livro: [http://www.web2py.com/book](http://www.web2py.com/book)
+
+* Forum suporte: [http://groups.google.com/group/web2py/](http://groups.google.com/group/web2py/)
+
+* Videos: [http://www.vimeo.com/search/videos/search:web2py/st/ceddf0b4/sort:newest/format:thumbnail](http://www.vimeo.com/search/videos/search:web2py/st/ceddf0b4/sort:newest/format:thumbnail)
 
 ### TornadoWeb
 
